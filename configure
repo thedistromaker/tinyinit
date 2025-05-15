@@ -1,0 +1,21 @@
+#!/bin/bash
+
+yessingtons() {
+if [ -f $(command -v ld) ]; then
+	tar -xf essentialfiles.tar.xz
+else
+	echo "ld not installed, possibly gcc as well!"
+	exit 1
+fi
+}
+
+case $1 in
+	clean)
+		rm -rvf *.c *.o *.h Makefile
+		exit 0
+		;;
+	*)
+		yessingtons
+		;;
+esac
+		

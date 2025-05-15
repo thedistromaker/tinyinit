@@ -1,6 +1,7 @@
 #!/bin/bash
 
-yessingtons() {
+mainthing() {
+echo "Version 1.0.1 tinyinit"
 if [ -f $(command -v ld) ]; then
 	tar -xf essentialfiles.tar.xz
 else
@@ -15,7 +16,7 @@ case $1 in
 		exit 0
 		;;
 	*)
-		yessingtons
+		mainthing
 		;;
 esac
 		

@@ -3,3 +3,4 @@ A tiny init system that is fully written in C, and has shutdown and restart logi
 Source code available here, or you can get the binary (*coming soon with the 1.1 update*).<br>  
 # Update changelog
 1.0 - First commit.<br> 
+1.1 - Removed the configure script and made all individual files.<br> 

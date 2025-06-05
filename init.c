@@ -17,7 +17,7 @@ void handle_reboot(int sig) {
 }
 
 int main() {
-        printf("initramfs-init 1.00 starting..."); // Here is where we start our init system.
+        printf("initramfs-init 1.1.0 starting..."); // Here is where we start our init system.
         signal(SIGINT, handle_shtdwn);
         signal(SIGUSR1, handle_reboot);
         if (mount_essfs() != 0) {

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sys/mount.h>
+#include <string.h>
 #include "mounts.h"
 
 static int mount_vfs(const char *source, const char *target, const char *type) {

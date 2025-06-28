@@ -7,7 +7,7 @@ TARGET=init
 all: $(TARGET)
 
 $(TARGET): $(SRCS)
-        $(CC) $(CFLAGS) -o $@ $(SRCS)
+	$(CC) $(CFLAGS) -o $@ $(SRCS)
 
 clean:
-        rm -f $(TARGET) *.o
+	rm -f $(TARGET) *.o

@@ -23,7 +23,8 @@ int main() {
         if (mount_essfs() != 0) {
                 fprintf(stderr, "F: Unable to mount root filesystem.\n"); // Where we set up the root filesystem, and the error logic.
         }
-        spawn_tty(); // Spawn the login screen and loop.
+        //spawn_tty(); // Spawn the login screen and loop.
+        execl("/bin/sh", "/bin/sh", NULL);
         if (reboot_requested)
                 shutdown_sys(1); // Restart and shutdown logic.
         else
